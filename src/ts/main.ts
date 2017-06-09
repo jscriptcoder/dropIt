@@ -1,8 +1,10 @@
+// import * as setupTouchDNDCustomEvents from 'touch-dnd-custom-events';
 import { DropIt } from './drop-it.js';
 
+// setupTouchDNDCustomEvents();
+
 const dnd = new DropIt('.draggable', '.dropzone', {
-  canDragOut: true,
-  detachSource: true
+  canDragOut: true
 });
 
 dnd.listen('dragstart', (dragSrcEl: HTMLElement, dataTransfer: DataTransfer) => {

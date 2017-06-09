@@ -128,12 +128,6 @@ export class DropIt {
     
     const dropZone = <HTMLElement>event.currentTarget;
     dropZone.classList.remove(this.config.overCls);
-
-    if (this.config.detachSource) {
-      this.dragSrcEl.parentElement.removeChild(this.dragSrcEl);
-    } else {
-      this.dragSrcEl.classList.add(this.config.droppedSourceCls);
-    }
     
     let droppedTarget;
     if (this.config.cloneOnDrop) {
@@ -151,6 +145,12 @@ export class DropIt {
       this.makeDraggable(droppedTarget);
     } else {
       droppedTarget.draggable = false;
+    }
+
+    if (this.config.detachSource) {
+      this.dragSrcEl.parentElement.removeChild(this.dragSrcEl);
+    } else {
+      this.dragSrcEl.classList.add(this.config.droppedSourceCls);
     }
     
     // binds draggables to their dropzones

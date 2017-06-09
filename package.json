@@ -6,7 +6,9 @@
   "scripts": {
     "compile-ts": "tsc",
     "compile-scss": "node-sass src/scss/ -o dist/css/",
-    "build": "npm run compile-scss && npm run compile-ts"
+    "bundle-js": "webpack dist/js/main.js dist/js/bundle.js",
+    "build": "npm run compile-scss && npm run compile-ts && npm run bundle-js",
+    "serve": "npm run build && live-server"
   },
   "repository": {
     "type": "git",
@@ -19,10 +21,12 @@
   },
   "homepage": "https://github.com/jscriptcoder/dropIt#readme",
   "devDependencies": {
+    "live-server": "^1.2.0",
     "node-sass": "^4.5.3",
-    "typescript": "^2.3.4"
+    "typescript": "^2.3.4",
+    "webpack": "^2.6.1"
   },
   "dependencies": {
-    "systemjs": "^0.20.13"
+    "touch-dnd-custom-events": "^1.5.0"
   }
 }
