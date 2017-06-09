@@ -1,0 +1,23 @@
+{
+  "name": "drop-it",
+  "version": "1.0.0",
+  "description": "Drag and drop using HTML5 API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jscriptcoder/dropIt.git"
+  },
+  "author": "Francisco Ramos <jscriptcoder@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jscriptcoder/dropIt/issues"
+  },
+  "homepage": "https://github.com/jscriptcoder/dropIt#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "typescript": "^2.3.4"
+  }
+}
