@@ -4,7 +4,9 @@
   "description": "Drag and drop using HTML5 API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile-ts": "tsc",
+    "compile-scss": "node-sass src/scss/ -o dist/css/",
+    "build": "npm run compile-scss && npm run compile-ts"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,8 @@
   "devDependencies": {
     "node-sass": "^4.5.3",
     "typescript": "^2.3.4"
+  },
+  "dependencies": {
+    "systemjs": "^0.20.13"
   }
 }

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>..:: Drop-It</title>
+<meta name="description" content="Drag and drop using HTML5 API">
+<meta name="author" content="Francisco Ramos">
+
+<link rel="stylesheet" href="dist/css/main.css">
+</head>
+
+<body>
+
+<div class="container dropzone">
+  <div class="element draggable">Draggable 1</div>
+  <div class="element draggable">Draggable 2</div>
+  <div class="element draggable">Draggable 3</div>
+  <div class="element draggable">Draggable 4</div>
+</div>
+
+<div class="element dropzone zone zone1">
+  <div>Drop zone1</div>
+</div>
+
+<div class="element dropzone zone zone2">
+  <div>Drop zone2</div>
+</div>
+
+<script src="node_modules/systemjs/dist/system.js"></script>
+<script>
+  System.import('./dist/js/main.js');
+</script>
+</body>
+</html>
